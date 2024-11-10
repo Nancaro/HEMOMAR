@@ -1,0 +1,129 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+.header {
+    background-color: #d32f2f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Logo Hemomar */
+.logo-hemomar {
+    max-width: 200px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 0 auto; /* Centra el logo */
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Secciones */
+.info-section, .importance-section, .donation-steps-section, .impediments-section, .hemocenters-section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #d32f2f;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Links y Redes Sociales */
+.social-links a {
+    color: #d32f2f;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem; /* Reduce el tamaño de la fuente */
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    /* Ajusta el tamaño de los logos */
+    .logo-hemomar, .footer img {
+        max-width: 150px; /* Reduce el tamaño del logo en dispositivos móviles */
+        height: auto;
+    }
+
+    /* Alineación de texto en secciones */
+    .importance-section, .donation-steps-section, .info-section, .impediments-section {
+        padding: 15px;
+    }
+
+    /* Listas y enlaces */
+    ul li {
+        font-size: 0.9rem;
+    }
+    
+    /* Ajusta el iframe del mapa de Google */
+    iframe {
+        width: 100%;
+        height: 300px; /* Cambia la altura en dispositivos pequeños */
+    }
+}
