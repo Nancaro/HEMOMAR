@@ -5,42 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hemomar São Luís - Doe Sangue</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Encabezado -->
     <header class="header">
-        <img src="logo-hemomar.png" alt="Logo Hemomar" class="logo-hemomar">
-        <h1>Centro de Hematologia e Hemoterapia – Hemomar</h1>
-        <p>Doe Sangue - Salve Vidas</p>
+        <div class="container">
+            <img src="Design_sem_nome__1_-removebg-preview.png" alt="Logo Hemomar" class="logo-hemomar">
+            <h1>Centro de Hematologia e Hemoterapia</h1>
+            <p>Doe Sangue - Salve Vidas</p>
+        </div>
     </header>
+    
 
     <!-- Sección de información y horario -->
     <section class="info-section">
         <div class="container">
             <h2>Informações de Contato</h2>
-            <p><strong>Banco de Sangue:</strong> Hemomar – Unidade São Luís</p>
-            <p><strong>Endereço:</strong> Rua 5 de Janeiro, S/N - Jordoa, São Luís-MA, CEP: 65040-450</p>
-            <p><strong>Telefones:</strong> 
-                <a href="tel:+559832161100">(98) 3216-1100</a> 
-                <a href="https://wa.me/559891623334">(98) 9162-3334</a> (Somente WhatsApp para agendamento)
-            </p>
+            <address>
+                <p><strong>Banco de Sangue:</strong> Hemomar – Unidade São Luís</p>
+                <p><strong>Endereço:</strong> Rua 5 de Janeiro, S/N - Jordoa, São Luís-MA, CEP: 65040-450</p>
+                <p><strong>Telefones:</strong> 
+                    <a href="tel:+559832161100">(98) 3216-1100</a> | 
+                    <a href="https://wa.me/559891623334">(98) 9162-3334</a> (Somente WhatsApp para agendamento)
+                </p>
+            </address>
             <h3>Horário de Funcionamento</h3>
             <ul>
                 <li>Segunda a Sexta: 8h às 18h</li>
                 <li>Sábado: 8h às 12h</li>
             </ul>
-            <div class="social-links">
-                <a href="https://www.instagram.com/hemomaroficial/?hl=es" target="_blank">Instagram</a> |
-                <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.2845789383744!2d-44.30463368463954!3d-2.5387400657746794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f69186c6e9828f%3A0x7d2e84eaf1a476b3!2sRua%205%20de%20Janeiro%2C%20Jordoa%2C%20S%C3%A3o%20Lu%C3%ADs%20-%20MA%2C%20Brazil!5e0!3m2!1sen!2sus!4v1691436013731!5m2!1sen!2sus"
-    width="100%"
-    height="450"
-    style="border:0;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+            <div class="social-links" id="social-links">
+                <div class="social-left">
+                    <a href="https://www.instagram.com/hemomaroficial/" target="_blank" class="btn-instagram-left" id="btn-instagram">
+                        <i class="fab fa-instagram"></i> Siga-nos no Instagram
+                    </a>
+                </div>
             </div>
+            
+            <br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.2845789383744!2d-44.30463368463954!3d-2.5387400657746794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f69186c6e9828f%3A0x7d2e84eaf1a476b3!2sRua%205%20de%20Janeiro%2C%20Jordoa%2C%20S%C3%A3o%20Lu%C3%ADs%20-%20MA%2C%20Brazil!5e0!3m2!1sen!2sus!4v1691436013731!5m2!1sen!2sus"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </section>
 
@@ -55,7 +70,7 @@
 
     <!-- Sección de requisitos y pasos para la donación -->
     <section class="donation-steps-section">
-        <div class="container">
+        <div class="container ">
             <h2>Passo a Passo da Doação de Sangue</h2>
             <ol>
                 <li>Cadastro</li>
@@ -72,7 +87,7 @@
                 <li>Não ter tomado antibiótico nos últimos 15 dias</li>
                 <li>Ter repousado bem na noite anterior à doação</li>
                 <li>Pesar acima de 50 kg</li>
-                <li>Ter idade entre 18 e 69 anos, 11 meses e 29 dias</li>
+                <li>Ter idade entre 18 e 69 anos</li>
                 <li>Doadores de 16 e 17 anos podem doar com autorização e presença de um responsável legal</li>
                 <li>Não ter feito tatuagens, piercings ou micropigmentação nos últimos 12 meses (piercing na cavidade oral/genital requer retirada há 12 meses)</li>
                 <li>Não ter diabetes, nem estar grávida ou amamentando (se o parto ocorreu há menos de 12 meses)</li>
@@ -136,11 +151,22 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-logos">
-            <img src="logo-gov.png" alt="Logo Governo do Maranhão" style="width: 100px; margin-right: 20px;">
-            <img src="logo-emserh.png" alt="Logo EMSERH" style="width: 100px;">
+            <img src="logo-gov.png" alt="Logo Governo do Maranhão" class="footer-logo">
+            <img src="logo-emserh.png" alt="Logo EMSERH" class="footer-logo">
         </div>
         <p>&copy; 2024 Hemomar Maranhão. Todos os direitos reservados.</p>
+        <div class="social-links">
+  <!-- Segundo botón centrado -->
+  <div class="social-center">
+    <a href="https://www.instagram.com/hemomaroficial/?hl=pt-br" target="_blank" class="btn-instagram" aria-label="Instagram Hemomar">
+        <i class="fab fa-instagram"></i>
+    </a>
+</div>
+</div>
         <a href="https://www.saude.ma.gov.br/doe-sangue/" target="_blank">Doe Sangue - Governo do Maranhão</a>
+        <div class="credit">
+            <p>Feito por <a href="https://www.matewebtecnologia.com.br" target="_blank" style="text-decoration: none; color: inherit;">matewebtecnologia</a></p>
+        </div>
     </footer>
 </body>
 </html>

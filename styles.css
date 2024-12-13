@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
@@ -8,78 +8,154 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Encabezado */
+/* Encabezado */
 .header {
-    background-color: #d32f2f;
+    background-color: #4657AA;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 0px 0px; /* Reducido el padding */
+    border-bottom: 5px solid #4e46aa; /* Borde dorado */
 }
 
 .header h1 {
-    margin: 0;
-    font-size: 2rem;
+    margin: 0px 0; /* Reducido el margen */
+    font-size: 1.8rem; /* Reducido el tamaño de la fuente */
 }
 
 .header p {
-    font-size: 1.2rem;
-    margin-top: 10px;
+    font-size: 1.2rem; /* Reducido el tamaño de la fuente */
 }
 
 /* Logo Hemomar */
 .logo-hemomar {
-    max-width: 200px; /* Ajusta el tamaño según tus necesidades */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin: 0 auto; /* Centra el logo */
-    display: block;
-    margin-bottom: 20px;
+    max-width: 75%; /* Tamaño más pequeño para el encabezado */
+    height: auto; /* Mantiene la proporción */
+    margin: 0 auto; /* Centra la imagen */
+    display: block; /* Asegura que sea un bloque */
+    margin-bottom: 5px; /* Reduce el margen inferior */
+    border: 0px; /* Quita el borde blanco si no es necesario */
+    border-radius: 0; /* Quita los bordes redondeados */
+    box-shadow: none; /* Quita la sombra si prefieres un diseño más limpio */
 }
 
+
 /* Secciones */
-.info-section, .importance-section, .donation-steps-section, .impediments-section, .hemocenters-section {
+section {
     background-color: #fff;
     margin: 20px 0;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
 }
 
 h2, h3 {
     color: #d32f2f;
+    margin-bottom: 10px;
 }
 
 /* Listas */
-ul {
-    list-style: none;
-    padding: 0;
+ul, ol {
+    padding-left: 20px;
 }
 
-ul li {
+ul li, ol li {
     margin: 10px 0;
 }
 
-/* Links y Redes Sociales */
-.social-links a {
-    color: #d32f2f;
-    text-decoration: none;
-    margin-right: 10px;
+/* Redes Sociales */
+#social-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
-.social-links a:hover {
-    text-decoration: underline;
+#btn-instagram {
+    display: inline-block;
+    color: #fff;
+    background-color: #d32f2f;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
+
+
+
+
+.social-center {
+    flex: 1;
+    text-align: center;
+}
+
+/* Botón de Instagram (izquierda) */
+.btn-instagram-left {
+    display: inline-block;
+    color: #fff;
+    background-color: #d32f2f;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    min-width: 150px; /* Evita que el botón se comprima demasiado */
+    text-align: center; /* Centra el texto */
+}
+
+.btn-instagram-left i {
+    margin-right: 8px;
+}
+
+.btn-instagram-left:hover {
+    background-color: #b71c1c;
+}
+
+/* Botón de Instagram (centrado) */
+.btn-instagram {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #E4405F; /* Color característico de Instagram */
+    color: #fff;
+    font-size: 1.5rem; /* Tamaño del ícono */
+    border-radius: 50%; /* Forma circular */
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    transition: all 0.3s ease; /* Transición suave */
+    
+}
+
+.btn-instagram:hover {
+    color: #b71c1c;
+}
+
+
 
 /* Footer */
 .footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+}
+
+.footer-logos {
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    width: 100px;
+    margin: 0 10px;
 }
 
 .footer a {
@@ -91,6 +167,21 @@ ul li {
     text-decoration: underline;
 }
 
+/* Créditos */
+.credit {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.credit a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.credit a:hover {
+    text-decoration: underline;
+}
+
 /* Media query para dispositivos móviles */
 @media (max-width: 600px) {
     .container {
@@ -98,26 +189,26 @@ ul li {
     }
 
     .header h1 {
-        font-size: 1.5rem; /* Reduce el tamaño de la fuente */
+        font-size: 1.8rem; /* Reduce el tamaño de la fuente */
     }
 
-    .header p {
-        font-size: 1rem;
+ .header p {
+        font-size: 1.2rem;
     }
 
     /* Ajusta el tamaño de los logos */
-    .logo-hemomar, .footer img {
+    .logo-hemomar, .footer-logo {
         max-width: 150px; /* Reduce el tamaño del logo en dispositivos móviles */
         height: auto;
     }
 
     /* Alineación de texto en secciones */
-    .importance-section, .donation-steps-section, .info-section, .impediments-section {
+    section {
         padding: 15px;
     }
 
     /* Listas y enlaces */
-    ul li {
+    ul li, ol li {
         font-size: 0.9rem;
     }
     
@@ -126,4 +217,20 @@ ul li {
         width: 100%;
         height: 300px; /* Cambia la altura en dispositivos pequeños */
     }
+@media (max-width: 600px) {
+    .social-links {
+        flex-direction: column; /* Cambia a una columna en pantallas pequeñas */
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .btn-instagram-left {
+        width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+        text-align: center;
+    }
+}
+}
+
+.parent-container {
+    overflow: visible; /* Asegúrate de que el contenido sea visible */
 }
